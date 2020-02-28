@@ -1,3 +1,10 @@
+from log_util import ScriptLogger
+
+if __name__ == '__main__':
+    logger = None
+else:
+    logger = ScriptLogger.get_main_logger()
+
 class ProjectList(object):
     def __init__(self):
         self.projects = []
@@ -32,10 +39,15 @@ class ProjectList(object):
 
 
     def insertIntoDB(self,db,cursor):
-        print("Storing projects to database...", flush=True)
+        logger.info("Storing projects to database...")
         for project in self.projects:
             project.storeProjectToDB(db,cursor)
-           
+
+    def writeSqlFiles(self):
+        logger.info("Storing projects to database...")
+        for project in self.projects:
+            project.saveProjectToSQLFile()
+        pass
 
 
 class Project(object):
@@ -55,7 +67,7 @@ class Project(object):
         self.name = name
         self.software_type = ""
         self.website = ""
-        self.repo_url = "" 
+        self.repo_url = ""
         self.repo_type = ""
         self.commit_reference = ""
         self.versions_with_cves = {}
@@ -63,7 +75,7 @@ class Project(object):
 
         #local repository link
         self.local_repo_dir = None
-        
+
         # Each key (vulnerable version id) will store a list
         # of code metrics (Language, size, blank, comments, loc, testing metrics, etc)
         self.code_metrics = {}
@@ -136,7 +148,7 @@ class Project(object):
             db.commit()
             # # data = cursor.fetchone()
         except (db.Error, db.Warning) as e:
-            print(e)    
+            print(e)
             print(insert)
 
         version_counter = 0

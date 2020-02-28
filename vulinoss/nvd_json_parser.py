@@ -23,8 +23,13 @@ parser.add_argument("oss_list",
     help="The csv with the most vulnerable open source systems")
 parser.add_argument("-m", "--project_name_mapping", 
     help="The csv file that matches alternative project names to their main names")
-parser.add_argument("-w", "--write_to_db", action='store_true',
+group = parser.add_mutually_exclusive_group()
+group.add_argument("-w", "--write_to_db", action='store_true',
     help="Writes to the database")
+group.add_argument("-s", "--write_sql_files", action='store_true',
+    help="Writes SQL files to be added later to database")
+
+
 parser.add_argument("-cb", "--connect_to_code_base", 
     help="Scans the local repositories for connecting NVD versions to repository snapshots")
 args = parser.parse_args()
@@ -200,6 +205,17 @@ if args.connect_to_code_base:
             pass
 
 
+def custom_sql_command(db, cursor, param):
+    logger.debug("Executing command:\n\t{}\n".format(param))
+    try:
+        cursor.execute(param)
+        db.commit()
+    except (db.Error, db.Warning) as e:
+        logger.info("Error non command:\n\t{}\n".format(param))
+        logger.error(e)
+    pass
+
+
 if args.write_to_db:
     # db = MySQLdb.connect(host= "localhost",
     db = db_connector.connect(host= "localhost",
@@ -207,14 +223,27 @@ if args.write_to_db:
                   passwd="tpcp4ss",
                   db="vulinoss")
     cursor = db.cursor()
-    print("Storing CVEs to database", flush=True)
+    logger.info("Temporary disabling the foreign keys")
+    custom_sql_command(db, cursor, "SET FOREIGN_KEY_CHECKS=0;")
+    logger.info("Storing CVEs to database")
+
     # Storing CVEs to DB
     for cve in cve_list:
        cve.writeCVEtoDB(db,cursor)
     # Storing projects to DB
     project_list.insertIntoDB(db,cursor)
 
+    logger.info("Enabling  the foreign keys")
+    custom_sql_command(db, cursor, "SET FOREIGN_KEY_CHECKS=1;")
+
     # disconnect from server
     db.close()
+
+
+if args.write_sql_files:
+    for cve in cve_list:
+       cve.writeCVEtoSqlFiles()
+    # Storing projects to DB
+    project_list.writeSqlFiles()
 
 # project_list.print()

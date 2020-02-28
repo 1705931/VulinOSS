@@ -313,3 +313,6 @@ class CVE(object):
         )
 
         return insert
+
+    def writeCVEtoSqlFiles(self):
+        pass
