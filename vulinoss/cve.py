@@ -146,7 +146,7 @@ class CVE(object):
     "CWE-94","CWE-940","CWE-941","CWE-942","CWE-943",
     "CWE-95","CWE-96","CWE-97","CWE-98","CWE-99","CWE-NVD-noinfo"]
 
-    def __init__(self):
+    def __init__(self, id):
         # general attributes
         self.id = id
         self.description = ""

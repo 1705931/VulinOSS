@@ -8,8 +8,13 @@ import codecs
 from colorama import Fore, Back, Style
 
 from cve import CVE
+from log_util import ScriptLogger
 from project import Project, ProjectList
 from repo_history_analyzer import RepoHistoryAnalyzer
+
+
+sl = ScriptLogger(__file__,level='INFO')
+logger = sl.get_main_logger()
 
 parser = argparse.ArgumentParser()
 parser.add_argument("cve_feed_directory", 
@@ -34,7 +39,7 @@ def match_local_to_repo(repo, repo_full_path, project_list):
     for project in project_list.projects:
         if project.repo_url.endswith(repo.replace("_", "/", 100)):
             project.local_repo_dir = repo_full_path.replace("\\","/",100)
-            # print("\tFound match: {}::{}".format(project.repo_url,project.local_repo_dir)) #DEBUG
+            logger.debug("\tFound match: {}::{}".format(project.repo_url,project.local_repo_dir))
             return
     print(Fore.RED +"\t\tERROR : Didn't match to any of the NVD projects {}".format(repo) + Style.RESET_ALL)
 
@@ -69,28 +74,25 @@ project_list = ProjectList()
 project_id = 0 # counter used as a project uid
 for json_file_name in json_file_list:
     json_file_path = os.path.join(json_directory, json_file_name)
-    print("Parsing json file :: {}".format(json_file_path), flush=True)
+    logger.info("Parsing json file :: {}".format(json_file_path))
     # parsed_json = json.load(open(json_file_path))
     parsed_json = json.load(codecs.open(json_file_path, 'r', 'utf-8-sig'))
     for cve_items in parsed_json['CVE_Items']:
         cve_entry = cve_items['cve']
         # stores the CVE-XXXX-XXXX unique id
         cve_id = cve_entry['CVE_data_meta']['ID']
-        # print(cve_id) # DEBUG
+        logger.debug(cve_id) # DEBUG
         # Ignore CVEs that are marked as REJECTED
         if "** REJECT **" in cve_entry['description']['description_data'][0]['value']:
-            # print("\tSkipped due to marked as REJECTED.") # DEBUG
+            logger.debug("\tSkipped due to marked as REJECTED.") # DEBUG
             continue
 
-        cve = CVE()
-        ### FIXME :: Refactor, the initialization should be performed in the Constructor, not here
-        # assings the previously retrieved cve-id
-        cve.id = cve_id
+        cve = CVE(cve_id)
         # Some CVEs are missing most of their details. Skip them
         vendors = cve_entry['affects']['vendor']['vendor_data']
         if len(vendors) == 0:
             rejected_cves.add(cve_id)
-            # print("Broken CVE: {}".format(cve_id))
+            logger.debug("Broken CVE: {}".format(cve_id))
             continue
         # assigns the CVE's description
         cve.description = cve_entry['description']['description_data'][0]['value']
@@ -176,7 +178,7 @@ for json_file_name in json_file_list:
                     # //TODO: create a counter that will operate as a project release uid
                     project.addVulnerability(version_value,cve_id)
                     # print(version_value)
-print("Skipped {} cves.".format(len(rejected_cves)))
+logger.info("Skipped {} cves.".format(len(rejected_cves)))
 # FIXME: move the insertion to db code to the appropriate classes. Keep only the db connection initialization here.
 
 # connecting project versions to repository snapshots
@@ -201,9 +203,8 @@ if args.connect_to_code_base:
 if args.write_to_db:
     # db = MySQLdb.connect(host= "localhost",
     db = db_connector.connect(host= "localhost",
-                  user="root",
-                  # passwd="mysql@d77c02",
-                  passwd="",
+                  user="tpcuser",
+                  passwd="tpcp4ss",
                   db="vulinoss")
     cursor = db.cursor()
     print("Storing CVEs to database", flush=True)
