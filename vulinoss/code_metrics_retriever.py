@@ -3,6 +3,11 @@ import pymysql as db_connector
 import os
 from colorama import Fore, Back, Style
 
+from log_util import ScriptLogger
+sl = ScriptLogger(__file__,level='INFO')
+logger = sl.get_main_logger()
+
+
 from utility import Utility
 from project import Project, ProjectList
 from testing_code_analyzer import TestingCodeAnalyzer
@@ -103,9 +108,10 @@ def read_project_list_file(filepath, connection):
 
 def match_local_to_repo(repo, repo_full_path, project_list):
     for project in project_list.projects:
+        print(project.repo_url)
         if project.repo_url.endswith(repo.replace("_", "/", 100)):
             project.local_repo_dir = repo_full_path.replace("\\","/",100)
-            # print("\tFound match: {}::{}".format(project.repo_url,project.local_repo_dir)) #DEBUG
+            print("\tFound match: {}::{}".format(project.repo_url,project.local_repo_dir)) #DEBUG
             return
     print(Fore.RED +"\t\tERROR : Didn't match to any of the NVD projects {}".format(repo) + Style.RESET_ALL)
 
@@ -252,7 +258,7 @@ def write_entry_to_csv(project, version_id, version_tag, code_metrics, csv_filep
 connection = db_connector.connect(host='localhost',
                              user='root',
                              # password='mysql@d77c02',
-                             password='',
+                             password='root',
                              db='vulinoss')
 
 project_list = read_project_list_file(project_list_csv_filepath, connection)
@@ -261,7 +267,8 @@ print("Looking for projects in directory: %s" % local_repos_root_directory)
 local_repos = get_repositories(local_repos_root_directory)
 for repo in local_repos:
     repo_full_path = os.path.join(local_repos_root_directory, repo)
-    # print("Checking if repo exists :: {}".format(repo_full_path))
+    print("Checking if repo exists :: {}".format(repo_full_path))
+    print("repo: {}\nrepo_full_path{}".format(repo, repo_full_path))
     match_local_to_repo(repo, repo_full_path, project_list)
 
 for project in project_list.projects:
@@ -269,7 +276,7 @@ for project in project_list.projects:
         print("PROJECT::{}".format(project.name))
         for version in project.versions_with_cves:
             if project.versions_with_cves[version]:
-                # print("Project: {}, version: {}".format(project.name,project.versions_with_cves[version]))
+                print("Project: {}, version: {}".format(project.name,project.versions_with_cves[version]))
                 code_metrics = analyse_version(project, version, project.versions_with_cves[version])
                 if code_metrics is not None:
                     
@@ -277,7 +284,7 @@ for project in project_list.projects:
                         write_entry_to_csv(project, version, project.versions_with_cves[version], code_metrics, args.write_to_file)
                 else:    
                     print("Version skipped. CLOC results not valid")
-        # project.print()
+        project.print()
 
 
-# project_list.print()
+project_list.print()

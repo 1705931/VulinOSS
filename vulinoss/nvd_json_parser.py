@@ -4,17 +4,17 @@ import os
 import sys
 import pymysql as db_connector
 import codecs
-
 from colorama import Fore, Back, Style
 
-from cve import CVE
 from log_util import ScriptLogger
+sl = ScriptLogger(__file__,level='INFO')
+logger = sl.get_main_logger()
+
+
+from cve import CVE
 from project import Project, ProjectList
 from repo_history_analyzer import RepoHistoryAnalyzer
 
-
-sl = ScriptLogger(__file__,level='INFO')
-logger = sl.get_main_logger()
 
 parser = argparse.ArgumentParser()
 parser.add_argument("cve_feed_directory", 
@@ -219,8 +219,8 @@ def custom_sql_command(db, cursor, param):
 if args.write_to_db:
     # db = MySQLdb.connect(host= "localhost",
     db = db_connector.connect(host= "localhost",
-                  user="tpcuser",
-                  passwd="tpcp4ss",
+                  user="root",
+                  passwd="root",
                   db="vulinoss")
     cursor = db.cursor()
     logger.info("Temporary disabling the foreign keys")

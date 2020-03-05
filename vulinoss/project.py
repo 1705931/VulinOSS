@@ -190,24 +190,24 @@ class Project(object):
             print(insert)
 
 
-        # print("Storing cves for {} {}".format(self.name, version))
-        # Store the exploits (vulnearble version with CVE)
-        # for cve in self.versions_with_cves[version]:
-        #     insert = (
-        #         "INSERT INTO vulnerable_cases ("
-        #             "cve,"
-        #             "prid"
-        #         ") VALUES ("
-        #             "'{}'," # cve
-        #             "{}" # id (incremented in this function)
-        #             ")"
-        #         ).format(
-        #             cve,
-        #             pv_id
-        #         )
-        #     try:
-        #             cursor.execute(insert)
-        #             db.commit()
-        #     except (db.Error, db.Warning) as e:
-        #             print(e)
-        #             print(insert)
+        print("Storing cves for {} {}".format(self.name, version))
+        #Store the exploits (vulnearble version with CVE)
+        for cve in self.versions_with_cves[version]:
+            insert = (
+                    "INSERT INTO vulnerable_cases ("
+                    "cve,"
+                    "prid"
+                    ") VALUES ("
+                    "'{}'," # cve
+                    "{}" # id (incremented in this function)
+                    ")"
+                    ).format(
+                            cve,
+                            pv_id
+                            )
+            try:
+                cursor.execute(insert)
+                db.commit()
+            except (db.Error, db.Warning) as e:
+                print(e)
+                print(insert)
