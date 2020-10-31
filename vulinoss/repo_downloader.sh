@@ -3,14 +3,17 @@
 input_file=$1
 echo "Input file:" $input_file
  
-repo_links="$(grep '[^-|\?\?]$' $input_file | cut -f3 -d';')"
+repo_links="$(grep '[^-|\?\?]$' $input_file | cut -f2 -d';')"
+echo "repo_links:" $repo_links
 
 while read -r repo; do 
     repo_name="$(echo $repo | cut -f4- -d'/' | tr '/' '_' | sed 's/_$//')"
+	echo "repo_name" $repo_name
 
     if [[ $repo == *".git"* || $repo == *"git."* || $repo == "git:"* ]]; then
         echo "Cloning git $repo_name repository [$repo]"
-        git clone $repo $repo_name 2>"$repo_name log.txt"
+        #git clone $repo $repo_name 2>"$repo_name log.txt"
+		git clone $repo >"$repo_name log.txt"
         echo "finished."
         :
     elif [[ $repo == *".hg"* || $repo == *"hg."* || $repo == *"bitbucket."* || $repo == *"/hg/"* ]]; then
