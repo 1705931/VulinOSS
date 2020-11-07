@@ -12,8 +12,8 @@ while read -r repo; do
 
     if [[ $repo == *".git"* || $repo == *"git."* || $repo == "git:"* ]]; then
         echo "Cloning git $repo_name repository [$repo]"
-        #git clone $repo $repo_name 2>"$repo_name log.txt"
-		git clone $repo >"$repo_name log.txt"
+		#Uncomment the following line to clone repositories
+		#git clone $repo >"$repo_name log.txt"
         echo "finished."
         :
     elif [[ $repo == *".hg"* || $repo == *"hg."* || $repo == *"bitbucket."* || $repo == *"/hg/"* ]]; then
