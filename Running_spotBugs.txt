@@ -1,0 +1,2 @@
+cd into D:\Program Files\spotbugs-4.1.4\spotbugs-4.1.4
+run the following: java -jar lib\spotbugs.jar -textui D:\IntelliJ Projects\VulinOSS\vulinoss\fcrepo
