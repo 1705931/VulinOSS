@@ -1,0 +1,283 @@
+{
+  "errors": [
+    {
+      "filename": "clamav-devel\\libclamav\\c++\\llvm\\utils\\DSAclean.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "clamav-devel\\libclamav\\c++\\llvm\\utils\\DSAextract.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "clamav-devel\\libclamav\\c++\\llvm\\utils\\lint\\common_lint.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "clamav-devel\\libclamav\\c++\\llvm\\utils\\lint\\cpp_lint.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\ShCommands.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\ShUtil.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\TclUtil.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\TestRunner.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\TestingConfig.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\Util.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\lit.py",
+      "reason": "syntax error while parsing AST from file"
+    }
+  ],
+  "generated_at": "2020-12-05T21:24:23Z",
+  "metrics": {
+    "_totals": {
+      "CONFIDENCE.HIGH": 3.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 3.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 2604,
+      "nosec": 0
+    },
+    "clamav-devel\\fuzz\\run_fuzzer_tests.py": {
+      "CONFIDENCE.HIGH": 2.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 2.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 109,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\DSAclean.py": {
+      "loc": 16,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\DSAextract.py": {
+      "loc": 43,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lint\\common_lint.py": {
+      "loc": 76,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lint\\cpp_lint.py": {
+      "loc": 59,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lint\\generic_lint.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 13,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 3,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\LitConfig.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 84,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\LitFormats.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 2,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\LitTestCase.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 23,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\ProgressBar.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 202,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\ShCommands.py": {
+      "loc": 68,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\ShUtil.py": {
+      "loc": 281,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\TclUtil.py": {
+      "loc": 259,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\Test.py": {
+      "CONFIDENCE.HIGH": 1.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 1.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 54,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\TestFormats.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 163,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\TestRunner.py": {
+      "loc": 423,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\TestingConfig.py": {
+      "loc": 80,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\Util.py": {
+      "loc": 96,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\__init__.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 7,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\lit.py": {
+      "loc": 491,
+      "nosec": 0
+    },
+    "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\setup.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 52,
+      "nosec": 0
+    }
+  },
+  "results": [
+    {
+      "code": "12 import os\n13 import subprocess\n14 import sys\n",
+      "filename": "clamav-devel\\fuzz\\run_fuzzer_tests.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with subprocess module.",
+      "line_number": 13,
+      "line_range": [
+        13
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "47     with tempfile.TemporaryFile() as tempf:\n48         p = subprocess.Popen(command, stderr=tempf)\n49         is_killed = {'value': False}\n",
+      "filename": "clamav-devel\\fuzz\\run_fuzzer_tests.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 48,
+      "line_range": [
+        48
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "66     def setResult(self, result, output, elapsed):\n67         assert self.result is None, \"Test result already set!\"\n68         self.result = result\n",
+      "filename": "clamav-devel\\libclamav\\c++\\llvm\\utils\\lit\\lit\\Test.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 67,
+      "line_range": [
+        67
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    }
+  ]
+}
