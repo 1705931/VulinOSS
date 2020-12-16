@@ -1,0 +1,542 @@
+{
+  "errors": [
+    {
+      "filename": "freetype2\\src\\tools\\chktrcmp.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "freetype2\\src\\tools\\cordic.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "freetype2\\src\\tools\\glnames.py",
+      "reason": "syntax error while parsing AST from file"
+    }
+  ],
+  "generated_at": "2020-12-11T16:02:53Z",
+  "metrics": {
+    "_totals": {
+      "CONFIDENCE.HIGH": 27.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 27.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 5791,
+      "nosec": 0
+    },
+    "freetype2\\builds\\mac\\ascii2mpw.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 22,
+      "nosec": 0
+    },
+    "freetype2\\builds\\meson\\extract_freetype_version.py": {
+      "CONFIDENCE.HIGH": 4.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 4.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 77,
+      "nosec": 0
+    },
+    "freetype2\\builds\\meson\\extract_libtool_version.py": {
+      "CONFIDENCE.HIGH": 2.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 2.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 77,
+      "nosec": 0
+    },
+    "freetype2\\builds\\meson\\generate_reference_docs.py": {
+      "CONFIDENCE.HIGH": 4.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 4.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 61,
+      "nosec": 0
+    },
+    "freetype2\\builds\\meson\\parse_modules_cfg.py": {
+      "CONFIDENCE.HIGH": 3.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 3.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 115,
+      "nosec": 0
+    },
+    "freetype2\\builds\\meson\\process_ftoption_h.py": {
+      "CONFIDENCE.HIGH": 1.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 1.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 78,
+      "nosec": 0
+    },
+    "freetype2\\src\\tools\\chktrcmp.py": {
+      "loc": 75,
+      "nosec": 0
+    },
+    "freetype2\\src\\tools\\cordic.py": {
+      "loc": 21,
+      "nosec": 0
+    },
+    "freetype2\\src\\tools\\glnames.py": {
+      "loc": 5111,
+      "nosec": 0
+    },
+    "freetype2\\src\\tools\\make_distribution_archives.py": {
+      "CONFIDENCE.HIGH": 13.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 13.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 154,
+      "nosec": 0
+    }
+  },
+  "results": [
+    {
+      "code": "38         if m:\n39             assert major == None, \"FREETYPE_MAJOR appears more than once!\"\n40             major = m.group(1)\n",
+      "filename": "freetype2\\builds\\meson\\extract_freetype_version.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 39,
+      "line_range": [
+        39
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "44         if m:\n45             assert minor == None, \"FREETYPE_MINOR appears more than once!\"\n46             minor = m.group(1)\n",
+      "filename": "freetype2\\builds\\meson\\extract_freetype_version.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 45,
+      "line_range": [
+        45
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "50         if m:\n51             assert patch == None, \"FREETYPE_PATCH appears more than once!\"\n52             patch = m.group(1)\n",
+      "filename": "freetype2\\builds\\meson\\extract_freetype_version.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 51,
+      "line_range": [
+        51
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "54 \n55     assert (\n56         major and minor and patch\n57     ), \"This header is missing one of FREETYPE_MAJOR, FREETYPE_MINOR or FREETYPE_PATCH!\"\n58 \n59     return (major, minor, patch)\n",
+      "filename": "freetype2\\builds\\meson\\extract_freetype_version.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 55,
+      "line_range": [
+        55,
+        56,
+        57,
+        58
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "34         if m:\n35             assert major == None, \"version_info appears more than once!\"\n36             major = m.group(1)\n",
+      "filename": "freetype2\\builds\\meson\\extract_libtool_version.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 35,
+      "line_range": [
+        35
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "40 \n41     assert (\n42         major and minor and patch\n43     ), \"This input file is missing a version_info definition!\"\n44 \n45     return (major, minor, patch)\n",
+      "filename": "freetype2\\builds\\meson\\extract_libtool_version.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 41,
+      "line_range": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "8 import os\n9 import subprocess\n10 import sys\n",
+      "filename": "freetype2\\builds\\meson\\generate_reference_docs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with subprocess module.",
+      "line_number": 9,
+      "line_range": [
+        9
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "53     else:\n54         assert os.path.isdir(args.output_dir), (\n55             \"Not a directory: \" + args.output_dir\n56         )\n",
+      "filename": "freetype2\\builds\\meson\\generate_reference_docs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 54,
+      "line_range": [
+        54,
+        55
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "68     print(\"Running docwriter...\")\n69     subprocess.check_call(cmds)\n70 \n",
+      "filename": "freetype2\\builds\\meson\\generate_reference_docs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 69,
+      "line_range": [
+        69
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "71     print(\"Building static site...\")\n72     subprocess.check_call(\n73         [sys.executable, \"-m\", \"mkdocs\", \"build\"], cwd=args.output_dir\n74     )\n",
+      "filename": "freetype2\\builds\\meson\\generate_reference_docs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 72,
+      "line_range": [
+        72,
+        73
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "40         items = line.split()\n41         assert len(items) == 3 and items[1] == \"+=\", (\n42             \"Unexpected input line [%s]\" % line\n43         )\n44         assert items[0] in lists, (\n",
+      "filename": "freetype2\\builds\\meson\\parse_modules_cfg.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 41,
+      "line_range": [
+        41,
+        42,
+        43
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "43         )\n44         assert items[0] in lists, (\n45             \"Unexpected configuration variable name \" + items[0]\n46         )\n47 \n48         lists[items[0]].append(items[2])\n",
+      "filename": "freetype2\\builds\\meson\\parse_modules_cfg.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 44,
+      "line_range": [
+        44,
+        45,
+        46,
+        47
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "148     else:\n149         assert False, \"Invalid output format!\"\n150 \n",
+      "filename": "freetype2\\builds\\meson\\parse_modules_cfg.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 149,
+      "line_range": [
+        149
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "88     cmdline_options = set(args.enable) | set(args.disable)\n89     assert cmdline_options.issubset(\n90         options_seen\n91     ), \"Could not find options in input file: \" + \", \".join(\n92         sorted(cmdline_options - options_seen)\n93     )\n94 \n95     if args.output:\n",
+      "filename": "freetype2\\builds\\meson\\process_ftoption_h.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 89,
+      "line_range": [
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "9 import shutil\n10 import subprocess\n11 import sys\n",
+      "filename": "freetype2\\src\\tools\\make_distribution_archives.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with subprocess module.",
+      "line_number": 10,
+      "line_range": [
+        10
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "20     if cwd is not None:\n21         out = subprocess.check_output(cmd, cwd=cwd)\n22     else:\n",
+      "filename": "freetype2\\src\\tools\\make_distribution_archives.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 21,
+      "line_range": [
+        21
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "22     else:\n23         out = subprocess.check_output(cmd)\n24     return out.decode(\"utf-8\").rstrip()\n",
+      "filename": "freetype2\\src\\tools\\make_distribution_archives.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 23,
+      "line_range": [
+        23
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "140     # Run autogen.sh in directory.\n141     subprocess.check_call([\"/bin/sh\", \"autogen.sh\"], cwd=tmp_src_dir)\n142     shutil.rmtree(\n",
+      "filename": "freetype2\\src\\tools\\make_distribution_archives.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 141,
+      "line_range": [
+        141
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "154     # Generate reference documentation under docs/\n155     subprocess.check_call(\n156         [\n157             sys.executable,\n158             os.path.join(_SCRIPT_DIR, \"generate_reference_docs.py\"),\n159             \"--input-dir\",\n160             tmp_src_dir,\n161             \"--version\",\n162             version,\n163             \"--output-dir\",\n164             os.path.join(tmp_src_dir, \"docs\"),\n165         ]\n",
+      "filename": "freetype2\\src\\tools\\make_distribution_archives.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 155,
+      "line_range": [
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "173 \n174     subprocess.check_call(\n175         [\"tar\", \"-H\", \"ustar\", \"-chf\", freetype_tar, freetype_dir],\n176         cwd=build_dir,\n177     )\n",
+      "filename": "freetype2\\src\\tools\\make_distribution_archives.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 174,
+      "line_range": [
+        174,
+        175,
+        176
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "173 \n174     subprocess.check_call(\n175         [\"tar\", \"-H\", \"ustar\", \"-chf\", freetype_tar, freetype_dir],\n176         cwd=build_dir,\n177     )\n",
+      "filename": "freetype2\\src\\tools\\make_distribution_archives.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 174,
+      "line_range": [
+        174,
+        175,
+        176
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "178 \n179     subprocess.check_call(\n180         [\"gzip\", \"-9\", \"--keep\", freetype_tar], cwd=build_dir\n181     )\n",
+      "filename": "freetype2\\src\\tools\\make_distribution_archives.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 179,
+      "line_range": [
+        179,
+        180
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "178 \n179     subprocess.check_call(\n180         [\"gzip\", \"-9\", \"--keep\", freetype_tar], cwd=build_dir\n181     )\n",
+      "filename": "freetype2\\src\\tools\\make_distribution_archives.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 179,
+      "line_range": [
+        179,
+        180
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "182 \n183     subprocess.check_call([\"xz\", \"--keep\", freetype_tar], cwd=build_dir)\n184 \n",
+      "filename": "freetype2\\src\\tools\\make_distribution_archives.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 183,
+      "line_range": [
+        183
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "182 \n183     subprocess.check_call([\"xz\", \"--keep\", freetype_tar], cwd=build_dir)\n184 \n",
+      "filename": "freetype2\\src\\tools\\make_distribution_archives.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 183,
+      "line_range": [
+        183
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "185     ftwinversion = \"ft\" + \"\".join(version.split(\".\"))\n186     subprocess.check_call(\n187         [\"zip\", \"-qlr9\", ftwinversion + \".zip\", freetype_dir], cwd=build_dir\n188     )\n",
+      "filename": "freetype2\\src\\tools\\make_distribution_archives.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 186,
+      "line_range": [
+        186,
+        187
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "185     ftwinversion = \"ft\" + \"\".join(version.split(\".\"))\n186     subprocess.check_call(\n187         [\"zip\", \"-qlr9\", ftwinversion + \".zip\", freetype_dir], cwd=build_dir\n188     )\n",
+      "filename": "freetype2\\src\\tools\\make_distribution_archives.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 186,
+      "line_range": [
+        186,
+        187
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    }
+  ]
+}

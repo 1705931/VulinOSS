@@ -1,0 +1,241 @@
+{
+  "errors": [
+    {
+      "filename": "ffmpeg\\tools\\normalize.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "ffmpeg\\tools\\zmqshell.py",
+      "reason": "syntax error while parsing AST from file"
+    }
+  ],
+  "generated_at": "2020-12-11T15:56:29Z",
+  "metrics": {
+    "_totals": {
+      "CONFIDENCE.HIGH": 12.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 12.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 555,
+      "nosec": 0
+    },
+    "ffmpeg\\tools\\normalize.py": {
+      "loc": 29,
+      "nosec": 0
+    },
+    "ffmpeg\\tools\\python\\convert.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 28,
+      "nosec": 0
+    },
+    "ffmpeg\\tools\\python\\convert_from_tensorflow.py": {
+      "CONFIDENCE.HIGH": 12.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 12.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 475,
+      "nosec": 0
+    },
+    "ffmpeg\\tools\\python\\convert_header.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 3,
+      "nosec": 0
+    },
+    "ffmpeg\\tools\\zmqshell.py": {
+      "loc": 20,
+      "nosec": 0
+    }
+  },
+  "results": [
+    {
+      "code": "147     def dump_complex_conv2d_to_file(self, node, f):\n148         assert(node.op == 'Conv2D')\n149         self.layer_number = self.layer_number + 1\n",
+      "filename": "ffmpeg\\tools\\python\\convert_from_tensorflow.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 148,
+      "line_range": [
+        148
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "202     def dump_dense_to_file(self, node, f):\n203         assert(node.op == 'MatMul')\n204         self.layer_number = self.layer_number + 1\n",
+      "filename": "ffmpeg\\tools\\python\\convert_from_tensorflow.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 203,
+      "line_range": [
+        203
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "254     def dump_simple_conv2d_to_file(self, node, f):\n255         assert(node.op == 'Conv2D')\n256         self.layer_number = self.layer_number + 1\n",
+      "filename": "ffmpeg\\tools\\python\\convert_from_tensorflow.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 255,
+      "line_range": [
+        255
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "292     def dump_depth2space_to_file(self, node, f):\n293         assert(node.op == 'DepthToSpace')\n294         self.layer_number = self.layer_number + 1\n",
+      "filename": "ffmpeg\\tools\\python\\convert_from_tensorflow.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 293,
+      "line_range": [
+        293
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "303     def dump_mirrorpad_to_file(self, node, f):\n304         assert(node.op == 'MirrorPad')\n305         self.layer_number = self.layer_number + 1\n",
+      "filename": "ffmpeg\\tools\\python\\convert_from_tensorflow.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 304,
+      "line_range": [
+        304
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "319     def dump_maximum_to_file(self, node, f):\n320         assert(node.op == 'Maximum')\n321         self.layer_number = self.layer_number + 1\n",
+      "filename": "ffmpeg\\tools\\python\\convert_from_tensorflow.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 320,
+      "line_range": [
+        320
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "374     def dump_avg_pool_to_file(self, node, f):\n375         assert(node.op == 'AvgPool')\n376         self.layer_number = self.layer_number + 1\n",
+      "filename": "ffmpeg\\tools\\python\\convert_from_tensorflow.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 375,
+      "line_range": [
+        375
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "382         # current native NN do not support pooling strides in channel dimension, added assert() here.\n383         assert(strides.list.i[1]==strides.list.i[2])\n384         assert(strides.list.i[0]==1)\n",
+      "filename": "ffmpeg\\tools\\python\\convert_from_tensorflow.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 383,
+      "line_range": [
+        383
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "383         assert(strides.list.i[1]==strides.list.i[2])\n384         assert(strides.list.i[0]==1)\n385         assert(strides.list.i[3]==1)\n",
+      "filename": "ffmpeg\\tools\\python\\convert_from_tensorflow.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 384,
+      "line_range": [
+        384
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "384         assert(strides.list.i[0]==1)\n385         assert(strides.list.i[3]==1)\n386         strides = strides.list.i[1]\n",
+      "filename": "ffmpeg\\tools\\python\\convert_from_tensorflow.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 385,
+      "line_range": [
+        385
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "390         # Tensorflow do not support pooling ksize in batch dimension and channel dimension.\n391         assert(filter_node.list.i[0]==1)\n392         assert(filter_node.list.i[3]==1)\n",
+      "filename": "ffmpeg\\tools\\python\\convert_from_tensorflow.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 391,
+      "line_range": [
+        391
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "391         assert(filter_node.list.i[0]==1)\n392         assert(filter_node.list.i[3]==1)\n393         filter_height = filter_node.list.i[1]\n",
+      "filename": "ffmpeg\\tools\\python\\convert_from_tensorflow.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 392,
+      "line_range": [
+        392
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    }
+  ]
+}

@@ -1,0 +1,675 @@
+{
+  "errors": [
+    {
+      "filename": "icqdesktop\\gui\\qt_prebuild_linux.py",
+      "reason": "syntax error while parsing AST from file"
+    }
+  ],
+  "generated_at": "2020-12-11T16:07:52Z",
+  "metrics": {
+    "_totals": {
+      "CONFIDENCE.HIGH": 42.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 12.0,
+      "SEVERITY.LOW": 29.0,
+      "SEVERITY.MEDIUM": 1.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 336,
+      "nosec": 0
+    },
+    "icqdesktop\\gui\\qt_prebuild.py": {
+      "CONFIDENCE.HIGH": 14.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 14.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 83,
+      "nosec": 0
+    },
+    "icqdesktop\\gui\\qt_prebuild_linux.py": {
+      "loc": 17,
+      "nosec": 0
+    },
+    "icqdesktop\\gui\\qt_prebuild_mac.py": {
+      "CONFIDENCE.HIGH": 17.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 11.0,
+      "SEVERITY.LOW": 5.0,
+      "SEVERITY.MEDIUM": 1.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 88,
+      "nosec": 0
+    },
+    "icqdesktop\\gui\\translations\\update_mark_finished.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 19,
+      "nosec": 0
+    },
+    "icqdesktop\\installer\\qt_prebuild.py": {
+      "CONFIDENCE.HIGH": 11.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 1.0,
+      "SEVERITY.LOW": 10.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 129,
+      "nosec": 0
+    }
+  },
+  "results": [
+    {
+      "code": "3 \n4 import os.path, time, sys, glob, re, subprocess\n5 \n6 qt_path = os.path.dirname(os.path.abspath(__file__ + \"/..\")).replace(\"\\\\\", \"/\")\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with subprocess module.",
+      "line_number": 4,
+      "line_range": [
+        4,
+        5
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "9 def file_contains_regex(path, regexes):\n10 \tassert os.path.exists(path)\n11 \tassert len(regexes) > 0\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 10,
+      "line_range": [
+        10
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "10 \tassert os.path.exists(path)\n11 \tassert len(regexes) > 0\n12 \n13 \tdef test_line(line):\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 11,
+      "line_range": [
+        11,
+        12
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "35 def build_mocs_in(dir):\n36 \tassert dir[-1] != '/'\n37 \tassert dir[-1] != '\\\\'\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 36,
+      "line_range": [
+        36
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "36 \tassert dir[-1] != '/'\n37 \tassert dir[-1] != '\\\\'\n38 \n39 \tfiles = glob.glob(dir + \"/*.h\")\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 37,
+      "line_range": [
+        37,
+        38
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "50 \t\t\t\tprint(os.path.basename(h_file), \"is newer that\", os.path.basename(moc_file),\">> rebuild\")\n51 \t\t\t\tsubprocess.call(qt_path + \"moc.exe \" + '\"' + h_file + '\"' + \" -b stdafx.h\" + \" -o \" + '\"' + moc_file + '\"')\n52 \t\telse:\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 51,
+      "line_range": [
+        51
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "53 \t\t\tprint(\"build\", os.path.basename(moc_file))\n54 \t\t\tsubprocess.call(qt_path + \"moc.exe \" + '\"' + h_file + '\"' + \" -b stdafx.h\" + \" -o \" + '\"' + moc_file + '\"')\n55 \n",
+      "filename": "icqdesktop\\gui\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 54,
+      "line_range": [
+        54
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "67 def compile_ui_in(dir):\n68 \tassert dir[-1] != '/'\n69 \tassert dir[-1] != '\\\\'\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 68,
+      "line_range": [
+        68
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "68 \tassert dir[-1] != '/'\n69 \tassert dir[-1] != '\\\\'\n70 \n71 \tfiles = glob.glob(dir + \"\\*.ui\")\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 69,
+      "line_range": [
+        69,
+        70
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "78 \t\t\t\tprint(os.path.basename(ui_file), \"is newer that\", os.path.basename(h_file),\">> rebuild\")\n79 \t\t\t\tsubprocess.call(qt_path + \"uic.exe \" + '\"' + ui_file + '\"' + \" -o \" + '\"' + h_file + '\"')\n80 \t\telse:\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 79,
+      "line_range": [
+        79
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "81 \t\t\tprint(\"build\", h_file)\n82 \t\t\tsubprocess.call(qt_path + \"uic.exe \" + '\"' + ui_file + '\"' + \" -o \" + '\"' + h_file + '\"')\n83 \n",
+      "filename": "icqdesktop\\gui\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 82,
+      "line_range": [
+        82
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "100 \t\t\tprint(os.path.basename(ts_file), \"is newer that\", os.path.basename(qm_file),\">> rebuild\")\n101 \t\t\tsubprocess.call(qt_path + \"lrelease.exe \" + '\"' + ts_file + '\"')\n102 \telse:\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 101,
+      "line_range": [
+        101
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "103 \t\tprint(\"build\", os.path.basename(qm_file))\n104 \t\tsubprocess.call(qt_path + \"lrelease.exe \" + '\"' + ts_file + '\"')\n105 \t\t\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 104,
+      "line_range": [
+        104
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "105 \t\t\n106 subprocess.call(qt_path + \"rcc.exe \" + '\"' + os.path.abspath(\"resource.qrc\").replace(\"\\\\\", \"/\") + '\"' + \" -o \" + '\"' + os.path.abspath(\"qresource\").replace(\"\\\\\", \"/\") + '\"' + \" --binary\")\n107 \n",
+      "filename": "icqdesktop\\gui\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 106,
+      "line_range": [
+        106
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "3 \n4 import os.path, time, sys, glob, xml.etree.ElementTree\n5 \n6 qt_base_path = \"../external/mac/Qt\"\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Using xml.etree.ElementTree to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.etree.ElementTree with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.",
+      "line_number": 4,
+      "line_range": [
+        4,
+        5
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b405-import-xml-etree",
+      "test_id": "B405",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "12 def build_mocs_in(dir):\n13 \tassert dir[-1] != '/'\n14 \tassert dir[-1] != '\\\\'\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 13,
+      "line_range": [
+        13
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "13 \tassert dir[-1] != '/'\n14 \tassert dir[-1] != '\\\\'\n15 \n16 \tfiles = glob.glob(dir + \"/*h\")\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 14,
+      "line_range": [
+        14,
+        15
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "24 \t\t\t\t\tprint(os.path.basename(h_file), \"is newer that\", os.path.basename(moc_file),\">> rebuild\")\n25 \t\t\t\t\tos.system('grep Q_OBJECT \"'+ h_file +'\" -q && ' + qt_base_path + \"/bin/moc \" + '\"' + h_file + '\"' + \" -b stdafx.h\" + \" -o \" + '\"' + moc_file + '\"')\n26 \t\t\telse:\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Starting a process with a shell, possible injection detected, security issue.",
+      "line_number": 25,
+      "line_range": [
+        25
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html",
+      "test_id": "B605",
+      "test_name": "start_process_with_a_shell"
+    },
+    {
+      "code": "27 \t\t\t\tprint(\"build\", os.path.basename(moc_file))\n28 \t\t\t\tos.system('grep Q_OBJECT \"'+ h_file +'\" -q && ' + qt_base_path + \"/bin/moc \" + '\"' + h_file + '\"' + \" -b stdafx.h\" + \" -o \" + '\"' + moc_file + '\"')\n29 \n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Starting a process with a shell, possible injection detected, security issue.",
+      "line_number": 28,
+      "line_range": [
+        28
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html",
+      "test_id": "B605",
+      "test_name": "start_process_with_a_shell"
+    },
+    {
+      "code": "34 def compile_ui_in(dir):\n35 \tassert dir[-1] != '/'\n36 \tassert dir[-1] != '\\\\'\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 35,
+      "line_range": [
+        35
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "35 \tassert dir[-1] != '/'\n36 \tassert dir[-1] != '\\\\'\n37 \n38 \tfiles = glob.glob(dir + \"/*.ui\")\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 36,
+      "line_range": [
+        36,
+        37
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "45 \t\t\t\tprint(os.path.basename(ui_file), \"is newer that\", os.path.basename(h_file),\">> rebuild\")\n46 \t\t\t\tos.system(qt_base_path + \"/bin/uic \" + '\"' + ui_file + '\"' + \" -o \" + '\"' + h_file + '\"')\n47 \t\telse:\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Starting a process with a shell, possible injection detected, security issue.",
+      "line_number": 46,
+      "line_range": [
+        46
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html",
+      "test_id": "B605",
+      "test_name": "start_process_with_a_shell"
+    },
+    {
+      "code": "48 \t\t\tprint(\"build\", h_file)\n49 \t\t\tos.system(qt_base_path + \"/bin/uic \" + '\"' + ui_file + '\"' + \" -o \" + '\"' + h_file + '\"')\n50 \n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Starting a process with a shell, possible injection detected, security issue.",
+      "line_number": 49,
+      "line_range": [
+        49
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html",
+      "test_id": "B605",
+      "test_name": "start_process_with_a_shell"
+    },
+    {
+      "code": "66 \t\t\tprint(os.path.basename(ts_file), \"is newer that\", os.path.basename(qm_file),\">> rebuild\")\n67 \t\t\tos.system(qt_base_path + \"/bin/lrelease \" + '\"' + ts_file + '\"')\t\n68 \telse:\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Starting a process with a shell, possible injection detected, security issue.",
+      "line_number": 67,
+      "line_range": [
+        67
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html",
+      "test_id": "B605",
+      "test_name": "start_process_with_a_shell"
+    },
+    {
+      "code": "69 \t\tprint(\"build\", os.path.basename(qm_file))\n70 \t\tos.system(qt_base_path + \"/bin/lrelease \" + '\"' + ts_file + '\"')\t\n71 \t\t\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Starting a process with a shell, possible injection detected, security issue.",
+      "line_number": 70,
+      "line_range": [
+        70
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html",
+      "test_id": "B605",
+      "test_name": "start_process_with_a_shell"
+    },
+    {
+      "code": "77 \t\t\tprint(os.path.basename(qrc_file), \"is newer that\", os.path.basename(qrc_cpp_file),\">> rebuild\")\n78 \t\t\tos.system(qt_base_path + \"/bin/rcc \" + '\"' + qrc_file + '\"' + \" -o \" + '\"' + qrc_cpp_file + '\"')\n79 \t\telse:\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Starting a process with a shell, possible injection detected, security issue.",
+      "line_number": 78,
+      "line_range": [
+        78
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html",
+      "test_id": "B605",
+      "test_name": "start_process_with_a_shell"
+    },
+    {
+      "code": "80 \t\t\tchanged = False\n81 \t\t\te = xml.etree.ElementTree.parse(qrc_file).getroot()\n82 \t\t\tfor child in e:\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Using xml.etree.ElementTree.parse to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.etree.ElementTree.parse with its defusedxml equivalent function or make sure defusedxml.defuse_stdlib() is called",
+      "line_number": 81,
+      "line_range": [
+        81
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b313-b320-xml-bad-elementtree",
+      "test_id": "B314",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "86 \t\t\t\t\t\tprint(file + \" is changed >> rebuild qrc\")\n87 \t\t\t\t\t\tos.system(qt_base_path + \"/bin/rcc \" + '\"' + qrc_file + '\"' + \" -o \" + '\"' + qrc_cpp_file + '\"')\n88 \t\t\t\t\t\tchanged = True\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Starting a process with a shell, possible injection detected, security issue.",
+      "line_number": 87,
+      "line_range": [
+        87
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html",
+      "test_id": "B605",
+      "test_name": "start_process_with_a_shell"
+    },
+    {
+      "code": "93 \tprint(\"build\", os.path.basename(qrc_cpp_file))\n94 \tos.system(qt_base_path + \"/bin/rcc \" + '\"' + qrc_file + '\"' + \" -o \" + '\"' + qrc_cpp_file + '\"')\n95 \n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Starting a process with a shell, possible injection detected, security issue.",
+      "line_number": 94,
+      "line_range": [
+        94
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html",
+      "test_id": "B605",
+      "test_name": "start_process_with_a_shell"
+    },
+    {
+      "code": "106 \t\t\tprint(\"core_dispatcher.h is newer that moc_core_dispatcher.cpp >> rebuild\")\n107 \t\t\tos.system(qt_base_path + \"/bin/moc core_dispatcher.h -o moc_core_dispatcher.cpp -b stdafx.h\")\t\n108 else:\n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Starting a process with a shell, possible injection detected, security issue.",
+      "line_number": 107,
+      "line_range": [
+        107
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html",
+      "test_id": "B605",
+      "test_name": "start_process_with_a_shell"
+    },
+    {
+      "code": "109 \tprint(\"build moc_core_dispatcher.cpp\")\n110 \tos.system(qt_base_path + \"/bin/moc \" + '\"' + os.path.abspath(\"core_dispatcher.h\") + '\"' + \" -b stdafx.h\"  + \" -o \" + '\"' + os.path.abspath(\"moc_core_dispatcher.cpp\") + '\"')\n111 \n",
+      "filename": "icqdesktop\\gui\\qt_prebuild_mac.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Starting a process with a shell, possible injection detected, security issue.",
+      "line_number": 110,
+      "line_range": [
+        110
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html",
+      "test_id": "B605",
+      "test_name": "start_process_with_a_shell"
+    },
+    {
+      "code": "3 \n4 import os.path, time, sys, glob, re, argparse, subprocess\n5 \n6 qt_path = os.path.dirname(os.path.abspath(__file__ + \"/..\")).replace(\"\\\\\", \"/\")\n",
+      "filename": "icqdesktop\\installer\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with subprocess module.",
+      "line_number": 4,
+      "line_range": [
+        4,
+        5
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "60 \t\tsys.stdout.flush()\n61 \t\tret = os.system(command)\n62 \t\tif (ret != 0):\n",
+      "filename": "icqdesktop\\installer\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "Starting a process with a shell, possible injection detected, security issue.",
+      "line_number": 61,
+      "line_range": [
+        61
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html",
+      "test_id": "B605",
+      "test_name": "start_process_with_a_shell"
+    },
+    {
+      "code": "76 def file_contains_regex(path, regexes):\n77 \tassert os.path.exists(path)\n78 \tassert len(regexes) > 0\n",
+      "filename": "icqdesktop\\installer\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 77,
+      "line_range": [
+        77
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "77 \tassert os.path.exists(path)\n78 \tassert len(regexes) > 0\n79 \n80 \tdef test_line(line):\n",
+      "filename": "icqdesktop\\installer\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 78,
+      "line_range": [
+        78,
+        79
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "102 def build_mocs_in(dir):\n103 \tassert dir[-1] != '/'\n104 \tassert dir[-1] != '\\\\'\n",
+      "filename": "icqdesktop\\installer\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 103,
+      "line_range": [
+        103
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "103 \tassert dir[-1] != '/'\n104 \tassert dir[-1] != '\\\\'\n105 \n106 \tmocs_dir = os.path.abspath(args.config.lower() + \"/mocs\")\n",
+      "filename": "icqdesktop\\installer\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 104,
+      "line_range": [
+        104,
+        105
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "121 \t\t\t\tprint(os.path.basename(h_file), \"is newer that\", os.path.basename(moc_file),\">> rebuild\")\n122 \t\t\t\tsubprocess.call(qt_path + \"moc.exe \" + '\"' + h_file + '\"' + \" -b stdafx.h\" + \" -o \" + '\"' + moc_file + '\"')\n123 \t\telse:\n",
+      "filename": "icqdesktop\\installer\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 122,
+      "line_range": [
+        122
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "124 \t\t\tprint(\"build\", os.path.basename(moc_file))\n125 \t\t\tsubprocess.call(qt_path + \"moc.exe \" + '\"' + h_file + '\"' + \" -b stdafx.h\" + \" -o \" + '\"' + moc_file + '\"')\n126 \n",
+      "filename": "icqdesktop\\installer\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 125,
+      "line_range": [
+        125
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "143 \tif ((not os.path.exists(cpp_file_name)) or (os.path.getmtime(qrc_file_name) > os.path.getmtime(cpp_file_name)) or args.config.lower() != \"debug\" or (os.path.getmtime(qss_file_name) > os.path.getmtime(cpp_file_name))):\n144 \t\tsubprocess.call(qt_path + \"rcc.exe \" + '\"' + qrc_file_name + '\"' + \" -o \" + '\"' + cpp_file_name + '\"')\n145 \n",
+      "filename": "icqdesktop\\installer\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 144,
+      "line_range": [
+        144
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "157 \t\t\t\tprint(os.path.basename(ts_file), \"is newer that\", os.path.basename(qm_file),\">> rebuild\")\n158 \t\t\t\tsubprocess.call(qt_path + \"lrelease.exe \" + '\"' + ts_file + '\"')\n159 \t\telse:\n",
+      "filename": "icqdesktop\\installer\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 158,
+      "line_range": [
+        158
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "160 \t\t\tprint(\"build\", os.path.basename(qm_file))\n161 \t\t\tsubprocess.call(qt_path + \"lrelease.exe \" + '\"' + ts_file + '\"')\n162 \t\t\ttranslation_changed = True\n",
+      "filename": "icqdesktop\\installer\\qt_prebuild.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 161,
+      "line_range": [
+        161
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    }
+  ]
+}

@@ -17,7 +17,7 @@
       "reason": "syntax error while parsing AST from file"
     }
   ],
-  "generated_at": "2020-12-05T21:07:59Z",
+  "generated_at": "2020-12-11T15:42:57Z",
   "metrics": {
     "_totals": {
       "CONFIDENCE.HIGH": 12.0,
@@ -1454,6 +1454,22 @@
   },
   "results": [
     {
+      "code": "11 import sys\n12 import xml.dom.minidom\n13 \n14 \n15 def get_manager_event_method_type(candidate_string):\n",
+      "filename": "asterisk\\build_tools\\get_documentation.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Using xml.dom.minidom to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.dom.minidom with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.",
+      "line_number": 12,
+      "line_range": [
+        12,
+        13,
+        14
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b408-import-xml-minidom",
+      "test_id": "B408",
+      "test_name": "blacklist"
+    },
+    {
       "code": "96     # Turn the XML into a DOM to manage the rest of the node manipulations\n97     dom = xml.dom.minidom.parseString(''.join(xml_fragment))\n98 \n",
       "filename": "asterisk\\build_tools\\get_documentation.py",
       "issue_confidence": "HIGH",
@@ -1465,6 +1481,22 @@
       ],
       "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b313-b320-xml-bad-minidom",
       "test_id": "B318",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "13 \n14 from xml.dom.minidom import parse\n15 \n16 \n17 def merge_parameter_information(managerEvent):\n",
+      "filename": "asterisk\\build_tools\\post_process_documentation.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Using parse to parse untrusted XML data is known to be vulnerable to XML attacks. Replace parse with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.",
+      "line_number": 14,
+      "line_range": [
+        14,
+        15,
+        16
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b408-import-xml-minidom",
+      "test_id": "B408",
       "test_name": "blacklist"
     },
     {
@@ -1480,6 +1512,120 @@
       "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b313-b320-xml-bad-minidom",
       "test_id": "B318",
       "test_name": "blacklist"
+    },
+    {
+      "code": "17     fileConfig(config.config_file_name)\n18 except:\n19     pass\n",
+      "filename": "asterisk\\contrib\\ast-db-manage\\env.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Try, Except, Pass detected.",
+      "line_number": 18,
+      "line_range": [
+        18
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b110_try_except_pass.html",
+      "test_id": "B110",
+      "test_name": "try_except_pass"
+    },
+    {
+      "code": "106         elif ifp.date < self.date.replace(microsecond=0):\n107             assert False, 'More packets than expected in 1s? {!r}/{!r}'.format(\n108                 ifp.date, self.date)\n109         else:\n",
+      "filename": "asterisk\\contrib\\scripts\\spandspflow2pcap.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 107,
+      "line_range": [
+        107,
+        108
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "216             match = search(r'(\\d{4})-(\\d\\d)-(\\d\\d) (\\d\\d):(\\d\\d):(\\d\\d)', line)\n217             assert match\n218             date = datetime(*[int(i) for i in match.groups()])\n",
+      "filename": "asterisk\\contrib\\scripts\\spandspflow2pcap.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 217,
+      "line_range": [
+        217
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "220             match = search(r'Rx\\s*(\\d+):', line)\n221             assert match\n222             seqno = int(match.groups()[0])\n",
+      "filename": "asterisk\\contrib\\scripts\\spandspflow2pcap.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 221,
+      "line_range": [
+        221
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "224             match = search(r': IFP ([0-9a-f ]+)', line)\n225             assert match\n226             data = n2b(match.groups()[0])\n",
+      "filename": "asterisk\\contrib\\scripts\\spandspflow2pcap.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 225,
+      "line_range": [
+        225
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "230                 # this check.\n231                 assert seqno == prev_seqno + 1, '%s+1 != %s' % (\n232                     seqno, prev_seqno)\n233                 pass\n",
+      "filename": "asterisk\\contrib\\scripts\\spandspflow2pcap.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 231,
+      "line_range": [
+        231,
+        232
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "93         if not self.name:\n94             assert(not parent)\n95             self.full_name = ''\n",
+      "filename": "asterisk\\rest-api-templates\\asterisk_processor.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 94,
+      "line_range": [
+        94
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "106         \"\"\"\n107         assert simple_name(path[0]) == self.name\n108         if (len(path) == 1):\n",
+      "filename": "asterisk\\rest-api-templates\\asterisk_processor.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 107,
+      "line_range": [
+        107
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
     }
   ]
 }

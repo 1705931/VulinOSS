@@ -1,0 +1,148 @@
+{
+  "errors": [],
+  "generated_at": "2020-12-11T15:57:10Z",
+  "metrics": {
+    "_totals": {
+      "CONFIDENCE.HIGH": 2.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 3.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 5.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 1146,
+      "nosec": 0
+    },
+    "foreman\\extras\\noVNC\\websockify.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 2,
+      "nosec": 0
+    },
+    "foreman\\extras\\noVNC\\websockify\\__init__.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 2,
+      "nosec": 0
+    },
+    "foreman\\extras\\noVNC\\websockify\\websocket.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 3.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 3.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 785,
+      "nosec": 0
+    },
+    "foreman\\extras\\noVNC\\websockify\\websocketproxy.py": {
+      "CONFIDENCE.HIGH": 2.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 2.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 357,
+      "nosec": 0
+    }
+  },
+  "results": [
+    {
+      "code": "263 \n264     def print_traffic(self, token=\".\"):\n265         \"\"\" Show traffic flow mode. \"\"\"\n266         if self.traffic:\n267             sys.stdout.write(token)\n268             sys.stdout.flush()\n269 \n270     def msg(self, msg, *args, **kwargs):\n",
+      "filename": "foreman\\extras\\noVNC\\websockify\\websocket.py",
+      "issue_confidence": "MEDIUM",
+      "issue_severity": "LOW",
+      "issue_text": "Possible hardcoded password: '.'",
+      "line_number": 264,
+      "line_range": [
+        264,
+        265,
+        266,
+        267,
+        268,
+        269
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b107_hardcoded_password_default.html",
+      "test_id": "B107",
+      "test_name": "hardcoded_password_default"
+    },
+    {
+      "code": "694                 if use_ssl:\n695                     sock = ssl.wrap_socket(sock)\n696             else:\n",
+      "filename": "foreman\\extras\\noVNC\\websockify\\websocket.py",
+      "issue_confidence": "MEDIUM",
+      "issue_severity": "LOW",
+      "issue_text": "ssl.wrap_socket call with no SSL/TLS protocol version specified, the default SSLv23 could be insecure, possible security issue.",
+      "line_number": 695,
+      "line_range": [
+        695
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b504_ssl_with_no_version.html",
+      "test_id": "B504",
+      "test_name": "ssl_with_no_version"
+    },
+    {
+      "code": "785             try:\n786                 retsock = ssl.wrap_socket(\n787                         sock,\n788                         server_side=True,\n789                         certfile=self.cert,\n790                         keyfile=self.key)\n791             except ssl.SSLError:\n",
+      "filename": "foreman\\extras\\noVNC\\websockify\\websocket.py",
+      "issue_confidence": "MEDIUM",
+      "issue_severity": "LOW",
+      "issue_text": "ssl.wrap_socket call with no SSL/TLS protocol version specified, the default SSLv23 could be insecure, possible security issue.",
+      "line_number": 786,
+      "line_range": [
+        786,
+        787,
+        788,
+        789,
+        790
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b504_ssl_with_no_version.html",
+      "test_id": "B504",
+      "test_name": "ssl_with_no_version"
+    },
+    {
+      "code": "13 \n14 import signal, socket, optparse, time, os, sys, subprocess, logging\n15 try:    from socketserver import ForkingMixIn\n",
+      "filename": "foreman\\extras\\noVNC\\websockify\\websocketproxy.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with subprocess module.",
+      "line_number": 14,
+      "line_range": [
+        14
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "236         self.wrap_times.pop(0)\n237         self.cmd = subprocess.Popen(\n238                 self.wrap_cmd, env=os.environ, preexec_fn=_subprocess_setup)\n239         self.spawn_message = True\n",
+      "filename": "foreman\\extras\\noVNC\\websockify\\websocketproxy.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 237,
+      "line_range": [
+        237,
+        238
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    }
+  ]
+}

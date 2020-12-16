@@ -1,0 +1,1435 @@
+{
+  "errors": [],
+  "generated_at": "2020-12-11T16:05:52Z",
+  "metrics": {
+    "_totals": {
+      "CONFIDENCE.HIGH": 54.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 1.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 10.0,
+      "SEVERITY.LOW": 42.0,
+      "SEVERITY.MEDIUM": 3.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 10739,
+      "nosec": 0
+    },
+    "glibc\\benchtests\\scripts\\bench.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 189,
+      "nosec": 0
+    },
+    "glibc\\benchtests\\scripts\\compare_bench.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 120,
+      "nosec": 0
+    },
+    "glibc\\benchtests\\scripts\\compare_strings.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 161,
+      "nosec": 0
+    },
+    "glibc\\benchtests\\scripts\\import_bench.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 96,
+      "nosec": 0
+    },
+    "glibc\\benchtests\\scripts\\plot_strings.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 283,
+      "nosec": 0
+    },
+    "glibc\\benchtests\\scripts\\validate_benchout.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 49,
+      "nosec": 0
+    },
+    "glibc\\conform\\conformtest.py": {
+      "CONFIDENCE.HIGH": 6.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 5.0,
+      "SEVERITY.LOW": 1.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 614,
+      "nosec": 0
+    },
+    "glibc\\conform\\glibcconform.py": {
+      "CONFIDENCE.HIGH": 2.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 1.0,
+      "SEVERITY.LOW": 1.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 59,
+      "nosec": 0
+    },
+    "glibc\\conform\\linknamespace.py": {
+      "CONFIDENCE.HIGH": 3.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 2.0,
+      "SEVERITY.LOW": 1.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 125,
+      "nosec": 0
+    },
+    "glibc\\conform\\list-header-symbols.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 42,
+      "nosec": 0
+    },
+    "glibc\\locale\\gen-translit.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 134,
+      "nosec": 0
+    },
+    "glibc\\localedata\\unicode-gen\\ctype_compatibility.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 472,
+      "nosec": 0
+    },
+    "glibc\\localedata\\unicode-gen\\ctype_compatibility_test_cases.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 933,
+      "nosec": 0
+    },
+    "glibc\\localedata\\unicode-gen\\gen_translit_circle.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 119,
+      "nosec": 0
+    },
+    "glibc\\localedata\\unicode-gen\\gen_translit_cjk_compat.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 189,
+      "nosec": 0
+    },
+    "glibc\\localedata\\unicode-gen\\gen_translit_combining.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 366,
+      "nosec": 0
+    },
+    "glibc\\localedata\\unicode-gen\\gen_translit_compat.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 246,
+      "nosec": 0
+    },
+    "glibc\\localedata\\unicode-gen\\gen_translit_font.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 126,
+      "nosec": 0
+    },
+    "glibc\\localedata\\unicode-gen\\gen_translit_fraction.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 166,
+      "nosec": 0
+    },
+    "glibc\\localedata\\unicode-gen\\gen_unicode_ctype.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 283,
+      "nosec": 0
+    },
+    "glibc\\localedata\\unicode-gen\\unicode_utils.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 357,
+      "nosec": 0
+    },
+    "glibc\\localedata\\unicode-gen\\utf8_compatibility.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 232,
+      "nosec": 0
+    },
+    "glibc\\localedata\\unicode-gen\\utf8_gen.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 258,
+      "nosec": 0
+    },
+    "glibc\\math\\gen-fromfp-tests.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 99,
+      "nosec": 0
+    },
+    "glibc\\math\\gen-libm-test.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 576,
+      "nosec": 0
+    },
+    "glibc\\math\\gen-tgmath-tests.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 653,
+      "nosec": 0
+    },
+    "glibc\\nptl\\nptl-printers.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 416,
+      "nosec": 0
+    },
+    "glibc\\nptl\\test-cond-printers.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 22,
+      "nosec": 0
+    },
+    "glibc\\nptl\\test-condattr-printers.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 38,
+      "nosec": 0
+    },
+    "glibc\\nptl\\test-mutex-printers.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 59,
+      "nosec": 0
+    },
+    "glibc\\nptl\\test-mutexattr-printers.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 67,
+      "nosec": 0
+    },
+    "glibc\\nptl\\test-rwlock-printers.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 35,
+      "nosec": 0
+    },
+    "glibc\\nptl\\test-rwlockattr-printers.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 44,
+      "nosec": 0
+    },
+    "glibc\\scripts\\build-many-glibcs.py": {
+      "CONFIDENCE.HIGH": 37.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 1.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 37.0,
+      "SEVERITY.MEDIUM": 1.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 1664,
+      "nosec": 0
+    },
+    "glibc\\scripts\\check-obsolete-constructs.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 324,
+      "nosec": 0
+    },
+    "glibc\\scripts\\check-wrapper-headers.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 66,
+      "nosec": 0
+    },
+    "glibc\\scripts\\check-wx-segment.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 52,
+      "nosec": 0
+    },
+    "glibc\\scripts\\gen-as-const.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 83,
+      "nosec": 0
+    },
+    "glibc\\scripts\\gen-rrtypes.py": {
+      "CONFIDENCE.HIGH": 1.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 1.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 38,
+      "nosec": 0
+    },
+    "glibc\\scripts\\glibcextract.py": {
+      "CONFIDENCE.HIGH": 3.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 2.0,
+      "SEVERITY.LOW": 1.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 138,
+      "nosec": 0
+    },
+    "glibc\\scripts\\list-fixed-bugs.py": {
+      "CONFIDENCE.HIGH": 1.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 1.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 36,
+      "nosec": 0
+    },
+    "glibc\\scripts\\test_printers_common.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 239,
+      "nosec": 0
+    },
+    "glibc\\scripts\\test_printers_exceptions.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 31,
+      "nosec": 0
+    },
+    "glibc\\scripts\\vcstocl_quirks.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 40,
+      "nosec": 0
+    },
+    "glibc\\stdio-common\\tst-errno-manual.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 37,
+      "nosec": 0
+    },
+    "glibc\\sysdeps\\unix\\sysv\\linux\\glibcsyscalls.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 180,
+      "nosec": 0
+    },
+    "glibc\\sysdeps\\unix\\sysv\\linux\\tst-glibcsyscalls.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 53,
+      "nosec": 0
+    },
+    "glibc\\sysdeps\\unix\\sysv\\linux\\tst-mman-consts.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 27,
+      "nosec": 0
+    },
+    "glibc\\sysdeps\\unix\\sysv\\linux\\tst-signal-numbers.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 21,
+      "nosec": 0
+    },
+    "glibc\\sysdeps\\unix\\sysv\\linux\\tst-socket-consts.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 28,
+      "nosec": 0
+    },
+    "glibc\\sysdeps\\unix\\sysv\\linux\\update-syscall-lists.py": {
+      "CONFIDENCE.HIGH": 1.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 1.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 54,
+      "nosec": 0
+    }
+  },
+  "results": [
+    {
+      "code": "23 import re\n24 import subprocess\n25 import sys\n",
+      "filename": "glibc\\conform\\conformtest.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with subprocess module.",
+      "line_number": 24,
+      "line_range": [
+        24
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "526                % (self.cc, self.standard, header, temp_file))\n527         subprocess.check_call(cmd, shell=True)\n528         with open(temp_file, 'r') as tests:\n",
+      "filename": "glibc\\conform\\conformtest.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "subprocess call with shell=True identified, security issue.",
+      "line_number": 527,
+      "line_range": [
+        527
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html",
+      "test_id": "B602",
+      "test_name": "subprocess_popen_with_shell_equals_true"
+    },
+    {
+      "code": "566         try:\n567             subprocess.check_call(cmd, shell=True)\n568         except subprocess.CalledProcessError:\n",
+      "filename": "glibc\\conform\\conformtest.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "subprocess call with shell=True identified, security issue.",
+      "line_number": 567,
+      "line_range": [
+        567
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html",
+      "test_id": "B602",
+      "test_name": "subprocess_popen_with_shell_equals_true"
+    },
+    {
+      "code": "594         try:\n595             subprocess.check_call(cmd, shell=True)\n596         except subprocess.CalledProcessError:\n",
+      "filename": "glibc\\conform\\conformtest.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "subprocess call with shell=True identified, security issue.",
+      "line_number": 595,
+      "line_range": [
+        595
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html",
+      "test_id": "B602",
+      "test_name": "subprocess_popen_with_shell_equals_true"
+    },
+    {
+      "code": "602         try:\n603             subprocess.check_call(exe_file, shell=True)\n604         except subprocess.CalledProcessError:\n",
+      "filename": "glibc\\conform\\conformtest.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "subprocess call with shell=True identified, security issue.",
+      "line_number": 603,
+      "line_range": [
+        603
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html",
+      "test_id": "B602",
+      "test_name": "subprocess_popen_with_shell_equals_true"
+    },
+    {
+      "code": "617                % (self.cc, self.cflags_namespace, c_file, out_file))\n618         subprocess.check_call(cmd, shell=True)\n619         bad_tokens = set()\n",
+      "filename": "glibc\\conform\\conformtest.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "subprocess call with shell=True identified, security issue.",
+      "line_number": 618,
+      "line_range": [
+        618
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html",
+      "test_id": "B602",
+      "test_name": "subprocess_popen_with_shell_equals_true"
+    },
+    {
+      "code": "21 import re\n22 import subprocess\n23 import tempfile\n",
+      "filename": "glibc\\conform\\glibcconform.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with subprocess module.",
+      "line_number": 22,
+      "line_range": [
+        22
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "75         try:\n76             subprocess.check_call(cmd, shell=True)\n77         except subprocess.CalledProcessError:\n",
+      "filename": "glibc\\conform\\glibcconform.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "subprocess call with shell=True identified, security issue.",
+      "line_number": 76,
+      "line_range": [
+        76
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html",
+      "test_id": "B602",
+      "test_name": "subprocess_popen_with_shell_equals_true"
+    },
+    {
+      "code": "25 import re\n26 import subprocess\n27 import sys\n",
+      "filename": "glibc\\conform\\linknamespace.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with subprocess module.",
+      "line_number": 26,
+      "line_range": [
+        26
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "175                   cincfile_name, cincfile_o_name))\n176         subprocess.check_call(cmd, shell=True)\n177         cmd = ('LC_ALL=C %s -W -s %s > %s'\n",
+      "filename": "glibc\\conform\\linknamespace.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "subprocess call with shell=True identified, security issue.",
+      "line_number": 176,
+      "line_range": [
+        176
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html",
+      "test_id": "B602",
+      "test_name": "subprocess_popen_with_shell_equals_true"
+    },
+    {
+      "code": "178                % (args.readelf, cincfile_o_name, cincfile_sym_name))\n179         subprocess.check_call(cmd, shell=True)\n180         for file, name, bind, defined in list_syms(cincfile_sym_name):\n",
+      "filename": "glibc\\conform\\linknamespace.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "subprocess call with shell=True identified, security issue.",
+      "line_number": 179,
+      "line_range": [
+        179
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html",
+      "test_id": "B602",
+      "test_name": "subprocess_popen_with_shell_equals_true"
+    },
+    {
+      "code": "52 import stat\n53 import subprocess\n54 import sys\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with subprocess module.",
+      "line_number": 53,
+      "line_range": [
+        53
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "68     def _run(*popenargs, input=None, timeout=None, check=False, **kwargs):\n69         assert(timeout is None)\n70         with subprocess.Popen(*popenargs, **kwargs) as process:\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 69,
+      "line_range": [
+        69
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "69         assert(timeout is None)\n70         with subprocess.Popen(*popenargs, **kwargs) as process:\n71             try:\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 70,
+      "line_range": [
+        70
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "131         sys.stdout.flush()\n132         os.execv(sys.executable, [sys.executable] + sys.argv)\n133 \n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "MEDIUM",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process without a shell.",
+      "line_number": 132,
+      "line_range": [
+        132
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b606_start_process_with_no_shell.html",
+      "test_id": "B606",
+      "test_name": "start_process_with_no_shell"
+    },
+    {
+      "code": "137                                     'config.guess')\n138         cg_out = subprocess.run([config_guess], stdout=subprocess.PIPE,\n139                                 check=True, universal_newlines=True).stdout\n140         return cg_out.rstrip()\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 138,
+      "line_range": [
+        138,
+        139
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "463             # Host libraries.\n464             assert subconfig is None\n465             return os.path.join(self.builddir, action, component)\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 464,
+      "line_range": [
+        464
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "673         cmd = ['make', '-j%d' % self.parallelism]\n674         subprocess.run(cmd, cwd=self.builddir, check=True)\n675 \n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 674,
+      "line_range": [
+        674
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "858             r = self.git_checkout(component, git_url, git_branch, update)\n859             subprocess.run(['autoreconf', '-i'],\n860                            cwd=self.component_srcdir(component), check=True)\n861             return r\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 859,
+      "line_range": [
+        859,
+        860
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "858             r = self.git_checkout(component, git_url, git_branch, update)\n859             subprocess.run(['autoreconf', '-i'],\n860                            cwd=self.component_srcdir(component), check=True)\n861             return r\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 859,
+      "line_range": [
+        859,
+        860
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "865             r = self.git_checkout(component, git_url, git_branch, update)\n866             subprocess.run(['autoreconf', '-i'],\n867                            cwd=self.component_srcdir(component), check=True)\n868             return r\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 866,
+      "line_range": [
+        866,
+        867
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "865             r = self.git_checkout(component, git_url, git_branch, update)\n866             subprocess.run(['autoreconf', '-i'],\n867                            cwd=self.component_srcdir(component), check=True)\n868             return r\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 866,
+      "line_range": [
+        866,
+        867
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "872             r = self.git_checkout(component, git_url, git_branch, update)\n873             subprocess.run(['autoconf'],\n874                            cwd=self.component_srcdir(component), check=True)\n875             return r\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 873,
+      "line_range": [
+        873,
+        874
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "872             r = self.git_checkout(component, git_url, git_branch, update)\n873             subprocess.run(['autoconf'],\n874                            cwd=self.component_srcdir(component), check=True)\n875             return r\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 873,
+      "line_range": [
+        873,
+        874
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "882         if update:\n883             subprocess.run(['git', 'remote', 'prune', 'origin'],\n884                            cwd=self.component_srcdir(component), check=True)\n885             if self.replace_sources:\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 883,
+      "line_range": [
+        883,
+        884
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "882         if update:\n883             subprocess.run(['git', 'remote', 'prune', 'origin'],\n884                            cwd=self.component_srcdir(component), check=True)\n885             if self.replace_sources:\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 883,
+      "line_range": [
+        883,
+        884
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "885             if self.replace_sources:\n886                 subprocess.run(['git', 'clean', '-dxfq'],\n887                                cwd=self.component_srcdir(component), check=True)\n888             subprocess.run(['git', 'pull', '-q'],\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 886,
+      "line_range": [
+        886,
+        887
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "885             if self.replace_sources:\n886                 subprocess.run(['git', 'clean', '-dxfq'],\n887                                cwd=self.component_srcdir(component), check=True)\n888             subprocess.run(['git', 'pull', '-q'],\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 886,
+      "line_range": [
+        886,
+        887
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "887                                cwd=self.component_srcdir(component), check=True)\n888             subprocess.run(['git', 'pull', '-q'],\n889                            cwd=self.component_srcdir(component), check=True)\n890         else:\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 888,
+      "line_range": [
+        888,
+        889
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "887                                cwd=self.component_srcdir(component), check=True)\n888             subprocess.run(['git', 'pull', '-q'],\n889                            cwd=self.component_srcdir(component), check=True)\n890         else:\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 888,
+      "line_range": [
+        888,
+        889
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "894                 depth_arg = ()\n895             subprocess.run(['git', 'clone', '-q', '-b', git_branch,\n896                             *depth_arg, git_url,\n897                             self.component_srcdir(component)], check=True)\n898         r = subprocess.run(['git', 'rev-parse', 'HEAD'],\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 895,
+      "line_range": [
+        895,
+        896,
+        897
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "894                 depth_arg = ()\n895             subprocess.run(['git', 'clone', '-q', '-b', git_branch,\n896                             *depth_arg, git_url,\n897                             self.component_srcdir(component)], check=True)\n898         r = subprocess.run(['git', 'rev-parse', 'HEAD'],\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 895,
+      "line_range": [
+        895,
+        896,
+        897
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "897                             self.component_srcdir(component)], check=True)\n898         r = subprocess.run(['git', 'rev-parse', 'HEAD'],\n899                            cwd=self.component_srcdir(component),\n900                            stdout=subprocess.PIPE,\n901                            check=True, universal_newlines=True).stdout\n902         return r.rstrip()\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 898,
+      "line_range": [
+        898,
+        899,
+        900,
+        901
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "897                             self.component_srcdir(component)], check=True)\n898         r = subprocess.run(['git', 'rev-parse', 'HEAD'],\n899                            cwd=self.component_srcdir(component),\n900                            stdout=subprocess.PIPE,\n901                            check=True, universal_newlines=True).stdout\n902         return r.rstrip()\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 898,
+      "line_range": [
+        898,
+        899,
+        900,
+        901
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "915             to_touch = os.path.join(srcdir, f)\n916             subprocess.run(['touch', '-c', to_touch], check=True)\n917         for dirpath, dirnames, filenames in os.walk(srcdir):\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 916,
+      "line_range": [
+        916
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "915             to_touch = os.path.join(srcdir, f)\n916             subprocess.run(['touch', '-c', to_touch], check=True)\n917         for dirpath, dirnames, filenames in os.walk(srcdir):\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 916,
+      "line_range": [
+        916
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "922                     to_touch = os.path.join(dirpath, f)\n923                     subprocess.run(['touch', to_touch], check=True)\n924 \n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 923,
+      "line_range": [
+        923
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "922                     to_touch = os.path.join(dirpath, f)\n923                     subprocess.run(['touch', to_touch], check=True)\n924 \n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 923,
+      "line_range": [
+        923
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "937                               branch, update)\n938         subprocess.run(['contrib/gcc_update', '--silent'],\n939                        cwd=self.component_srcdir('gcc'), check=True)\n940         r = subprocess.run(['git', 'rev-parse', 'HEAD'],\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 938,
+      "line_range": [
+        938,
+        939
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "937                               branch, update)\n938         subprocess.run(['contrib/gcc_update', '--silent'],\n939                        cwd=self.component_srcdir('gcc'), check=True)\n940         r = subprocess.run(['git', 'rev-parse', 'HEAD'],\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 938,
+      "line_range": [
+        938,
+        939
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "939                        cwd=self.component_srcdir('gcc'), check=True)\n940         r = subprocess.run(['git', 'rev-parse', 'HEAD'],\n941                            cwd=self.component_srcdir('gcc'),\n942                            stdout=subprocess.PIPE,\n943                            check=True, universal_newlines=True).stdout\n944         return r.rstrip()\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 940,
+      "line_range": [
+        940,
+        941,
+        942,
+        943
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "939                        cwd=self.component_srcdir('gcc'), check=True)\n940         r = subprocess.run(['git', 'rev-parse', 'HEAD'],\n941                            cwd=self.component_srcdir('gcc'),\n942                            stdout=subprocess.PIPE,\n943                            check=True, universal_newlines=True).stdout\n944         return r.rstrip()\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 940,
+      "line_range": [
+        940,
+        941,
+        942,
+        943
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "965         filename = os.path.join(self.srcdir, url.split('/')[-1])\n966         response = urllib.request.urlopen(url)\n967         data = response.read()\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+      "line_number": 966,
+      "line_range": [
+        966
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b310-urllib-urlopen",
+      "test_id": "B310",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "969             f.write(data)\n970         subprocess.run(['tar', '-C', self.srcdir, '-x', '-f', filename],\n971                        check=True)\n972         os.rename(os.path.join(self.srcdir, '%s-%s' % (component, version)),\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 970,
+      "line_range": [
+        970,
+        971
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "969             f.write(data)\n970         subprocess.run(['tar', '-C', self.srcdir, '-x', '-f', filename],\n971                        check=True)\n972         os.rename(os.path.join(self.srcdir, '%s-%s' % (component, version)),\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 970,
+      "line_range": [
+        970,
+        971
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "1023             test_name = m.group(2)\n1024             assert test_name not in build_results\n1025             build_results[test_name] = result\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 1024,
+      "line_range": [
+        1024
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "1202         sys.stdout.flush()\n1203         subprocess.run(cmd, check=check)\n1204 \n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 1203,
+      "line_range": [
+        1203
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "1269             break\n1270     assert linux_arch is not None\n1271     cmdlist.push_subdesc('linux')\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 1270,
+      "line_range": [
+        1270
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "1682         shell and make.\"\"\"\n1683         assert '\\n' not in s\n1684         if re.fullmatch('[]+,./0-9@A-Z_a-z-]+', s):\n",
+      "filename": "glibc\\scripts\\build-many-glibcs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 1683,
+      "line_range": [
+        1683
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "43 def get_types(source):\n44     for row in csv.reader(io.TextIOWrapper(urllib.request.urlopen(source))):\n45         if row[0] in ('TYPE', 'Unassigned', 'Private use', 'Reserved'):\n",
+      "filename": "glibc\\scripts\\gen-rrtypes.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+      "line_number": 44,
+      "line_range": [
+        44
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b310-urllib-urlopen",
+      "test_id": "B310",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "21 import re\n22 import subprocess\n23 import tempfile\n",
+      "filename": "glibc\\scripts\\glibcextract.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with subprocess module.",
+      "line_number": 22,
+      "line_range": [
+        22
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "61         cmd = ('%s -S -o %s -x c - < %s' % (cc, s_file_name, c_file_name))\n62         subprocess.check_call(cmd, shell=True)\n63         consts = {}\n",
+      "filename": "glibc\\scripts\\glibcextract.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "subprocess call with shell=True identified, security issue.",
+      "line_number": 62,
+      "line_range": [
+        62
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html",
+      "test_id": "B602",
+      "test_name": "subprocess_popen_with_shell_equals_true"
+    },
+    {
+      "code": "91         cmd = ('%s -E -dM -o %s %s' % (cc, i_file_name, c_file_name))\n92         subprocess.check_call(cmd, shell=True)\n93         macros_exp = {}\n",
+      "filename": "glibc\\scripts\\glibcextract.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "HIGH",
+      "issue_text": "subprocess call with shell=True identified, security issue.",
+      "line_number": 92,
+      "line_range": [
+        92
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html",
+      "test_id": "B602",
+      "test_name": "subprocess_popen_with_shell_equals_true"
+    },
+    {
+      "code": "45            '&include_fields=id,component,summary' % version)\n46     response = urllib.request.urlopen(url)\n47     json_data = response.read().decode('utf-8')\n",
+      "filename": "glibc\\scripts\\list-fixed-bugs.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "MEDIUM",
+      "issue_text": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+      "line_number": 46,
+      "line_range": [
+        46
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b310-urllib-urlopen",
+      "test_id": "B310",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "46                 os.unlink(path_tmp)\n47             except:\n48                 pass\n",
+      "filename": "glibc\\sysdeps\\unix\\sysv\\linux\\update-syscall-lists.py",
+      "issue_confidence": "HIGH",
+      "issue_severity": "LOW",
+      "issue_text": "Try, Except, Pass detected.",
+      "line_number": 47,
+      "line_range": [
+        47
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b110_try_except_pass.html",
+      "test_id": "B110",
+      "test_name": "try_except_pass"
+    }
+  ]
+}

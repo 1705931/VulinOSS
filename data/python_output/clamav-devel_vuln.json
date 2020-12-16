@@ -45,7 +45,7 @@
       "reason": "syntax error while parsing AST from file"
     }
   ],
-  "generated_at": "2020-12-05T21:24:23Z",
+  "generated_at": "2020-12-11T15:47:30Z",
   "metrics": {
     "_totals": {
       "CONFIDENCE.HIGH": 3.0,
